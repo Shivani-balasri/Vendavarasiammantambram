@@ -51,9 +51,17 @@
   </script>
   <script>
     function toggleNavbar() {
-      var navbar = document.getElementById('navbar');
-      navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'block' : 'none';
-    }
+  var navbar = document.getElementById('navbar');
+
+  // Check if the navbar is currently hidden or has no display style
+  if (navbar.style.display === 'none' || navbar.style.display === '') {
+    // If hidden, show the navbar
+    navbar.style.display = 'block';
+  } else {
+    // If visible, hide the navbar
+    navbar.style.display = 'none';
+  }
+}
   </script>
   <div class="hero_area">
     
