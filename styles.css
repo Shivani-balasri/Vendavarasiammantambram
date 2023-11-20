@@ -1,0 +1,116 @@
+/* styles.css */
+/* Ribbon Animation */
+.ribbon-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: black;
+    color: #fff;
+  }
+  
+  .ribbon {
+    position: center;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+    color: white;
+    animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Moving Animation */
+  #animatedSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #animatedElement {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    animation: moveAnimation 2s infinite alternate;
+  }
+  
+  @keyframes moveAnimation {
+    to {
+      transform: translateX(200px);
+    }
+  }
+
+  #animatedImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+
+  }
+  
+  /* Additional styles for history page image */
+  .img-box {
+    max-width: 100%;
+    overflow: hidden;
+    margin-left: 80px;
+  }
+  
+  .img-box img {
+    width: 70%;
+    height: 70%;
+    filter: brightness(80%) saturate(80%);
+  }
+  
+  /* Additional styles for portfolio section */
+  .portfolio_section {
+    padding: 50px 0;
+  }
+  
+  .carousel-wrap {
+    margin-top: 20px;
+  }
+  
+  .item {
+    overflow: hidden;
+  }
+  
+  .img-box {
+    position: relative;
+  }
+  
+  .btn_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .btn_overlay a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  

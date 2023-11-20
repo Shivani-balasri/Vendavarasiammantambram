@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Vedava raasi aman</title>
+
+  <!-- Your existing stylesheets and scripts -->
+
+  <style>
+    #Home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-images {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: fadeInOutAnimation 8s infinite; /* Adjust the animation duration as needed */
+    }
+
+    .home-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes fadeInOutAnimation {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <!-- Your existing header content -->
+
+    <section id="Home">
+      <div class="home-images">
+        <img src="images/Home_bg.jpeg" alt="Home Background">
+        <img src="images/Home_rangoli.jpg" alt="Home Rangoli Image">
+      </div>
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="detail-box">
+                <img src="images/Home_rangoli.jpg" id="animatedElement">
+                <hr>
+                <h4 id="tuti_head"> அன்னை வேண்டவராசி துதி</h4>
+                <h6 id="'tuti" style="color: yellow">
+                  நாக சக்தி நளின சக்தி நாத சக்தி வருகவே!<br>
+                  நாகம் பூண்ட நாரணத்தி ஞான சக்தி வருகவே!<br>
+                  வேக சக்தி வித்த கத்தி வெற்ப சக்தி வருகவே!<br>
+                  வீர சக்தி பார சக்தி வாலை சக்தி வருகவே!
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-container">
+        <div class="ribbon">
+          We invite you for Kumbhabhishekam on 10 December, 2023
+        </div>
+      </div>
+    </section>
+
+    <!-- Your existing body content -->
+
+    <!-- Your existing scripts -->
+
+    <script>
+      const homeImages = document.querySelector('.home-images');
+      const fadeInOutAnimation = () => {
+        homeImages.style.animation = 'none';
+        void homeImages.offsetWidth; // Trigger reflow
+        homeImages.style.animation = null;
+        homeImages.style.animation = 'fadeInOutAnimation 8s infinite'; // Adjust the animation duration as needed
+      };
+      setInterval(fadeInOutAnimation, 8000); // Change image every 8 seconds
+    </script>
+  </div>
+</body>
+
+</html>
