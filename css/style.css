@@ -13,9 +13,35 @@ body {
   background-image: url(../images/Home_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.7);/* Adjust the third value for darkness (0.5 means 50% darkness) */
-}
 
+}
+@media (max-width: 768px) {
+  body{
+
+
+  font-family: 'Poppins', sans-serif;
+  color:#ffffff;
+  overflow-x: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url(../images/mobile-background.jpg);
+  background-size: cover; /* This property ensures the whole image fits within the div */
+  
+ 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image within the div */
+    /* You can adjust the width and height of the div to fit your needs */
+     /* Or specify a fixed width */
+    height: 100%;
+
+}
+}
 .ribbon-container {
   display: none; /* Initially hide the ribbon */
   position: fixed;
@@ -129,14 +155,34 @@ a:focus {
 }
 
 /*header section*/
-
+.background-image{
+  background-color: transparent;
+}
 .text-content {
   position: absolute;
-  top: 55%;
-  right: 190px; /* Adjust the right spacing as needed */
+  top: 70%;
+  right:10%; 
+ /* Adjust the right spacing as needed */
   transform: translateY(-50%);
   color: white; /* Set the text color to gold for h3 */
-  text-align: center; /* Align the text to the right */
+  text-align: center; 
+}
+@media (max-width: 768px) {
+  .text-content {
+    top: 80%;
+    position: absolute;
+  
+  /* Adjust the right spacing as needed */
+  transform: translateY(-50%);
+  color: white; /* Set the text color to gold for h3 */
+  text-align: center;
+  }
+}
+
+
+
+.container-fluid{
+background-color: transparent;
 }
 
 /* Adjust the font size and other styles as needed */
@@ -149,10 +195,25 @@ a:focus {
 }
 
 .hero_area h3 {
-  margin: 10px 0; /* Add space between h1 and h3 */
-  font-size: 2rem; /* Set a smaller font size for h3 */
+  margin: 2vw 0; /* Add space between h1 and h3, using viewport width */
+  font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+  .hero_area h1 {
+    margin: 20;
+    font-weight: bold;
+    
+    font-size: 5vw;
+    color: yellow; /* Set the text color to light yellow for h1 */
+  }
+  
+  .hero_area h3 {
+    margin: 2vw 0; /* Add space between h1 and h3, using viewport width */
+    font-size: 3vw;
+  }
+
+}
 
 .sub_page .hero_area {
   height: auto;
@@ -172,13 +233,14 @@ a:focus {
 }
 
 .header_section .header_bottom {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   padding: 15px 0;
 }
 
 .header_section .header_bottom .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+
 }
 
 .navbar-brand {
@@ -199,6 +261,8 @@ a:focus {
 
 .custom_nav-container {
   padding: 0;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .custom_nav-container .navbar-nav {
@@ -358,9 +422,10 @@ a:focus {
 #History .img-box {
   position: relative;
   display: flex;
-  height:fit-content;
+  height:50%;
   justify-content: center;
   align-items: center;
+  
 }
 
 #History .img-box img {
@@ -662,8 +727,76 @@ a:focus {
   background-color: transparent;
   color: #da7426;
 }
+@media (max-width: 768px) {
+  .service_section .box {
+    padding: 8px;
+  }
 
+  .service_section .box .img-box {
+    width: 30px;
+    height: 30px;
+  }
 
+  .service_section .box .detail-box {
+    margin-top: 6px;
+  }
+
+  .service_section .btn-box {
+    margin-top: 15px;
+  }
+
+  .service_section .btn-box a {
+    padding: 4px 15px;
+  }
+}
+
+/* Additional styles for even smaller screens */
+@media (max-width: 480px) {
+  .service_section .box {
+    padding: 6px;
+  }
+
+  .service_section .box .img-box {
+    width: 20px;
+    height: 20px;
+  }
+
+  .service_section .box .detail-box {
+    margin-top: 4px;
+  }
+
+  .service_section .btn-box {
+    margin-top: 10px;
+  }
+
+  .service_section .btn-box a {
+    padding: 3px 10px;
+  }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 320px) {
+  .service_section .box {
+    padding: 4px;
+  }
+
+  .service_section .box .img-box {
+    width: 15px;
+    height: 15px;
+  }
+
+  .service_section .box .detail-box {
+    margin-top: 2px;
+  }
+
+  .service_section .btn-box {
+    margin-top: 5px;
+  }
+
+  .service_section .btn-box a {
+    padding: 2px 8px;
+  }
+}
 .slogan_section {
   position: relative;
   
@@ -720,6 +853,26 @@ a:focus {
   margin-right: 10px;
 }
 
+  @media (max-width: 768px) {
+    .slogan_section .background-image {
+      width: 90%;
+      height: 300px; /* Adjust the fixed height for smaller screens */
+    }
+  
+    .slogan_section ul {
+      padding: 10px;
+    }
+  
+    .slogan_section ul li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .slogan_section .icon {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+  }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -729,6 +882,7 @@ a:focus {
 .contact_section {
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
 }
 
 .contact_section .heading_container {
@@ -748,8 +902,14 @@ a:focus {
   padding: 10px;
   margin: auto; /* Center the form container */
 }
-
-
+@media (max-width: 768px) {
+  .contact_section .form_container{
+  width: 90%; /* Take up the full width of the screen on smaller screens */
+  max-width: none; /* Remove the maximum width */
+  background-color: rgba(218, 116, 38, 0.5);
+  margin: auto;
+}
+}
 .contact_section .form_container .form-control {
   width: 100% ; 
   border: none;
