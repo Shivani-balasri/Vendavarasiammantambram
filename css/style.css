@@ -306,7 +306,10 @@ border-right: 0px solid black;
   transition: color 0.3s, font-weight 0.3s; /* Smooth transition on color and font-weight */
 }
 
-
+@media (max-width: 1200px){
+font-size: 8px;
+  border-radius: 1px;
+}
 .custom_nav-container .navbar-nav .nav-item .nav-link i {
   margin-right: 1px;
 }
