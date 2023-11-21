@@ -264,7 +264,14 @@ background-color: transparent;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
 }
-
+@media (max-width: 1200px){
+.custom_nav-container {
+  display:none;
+  padding: 0;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+}
 .custom_nav-container .navbar-nav {
   margin: auto;
   display: flex;
@@ -272,10 +279,14 @@ background-color: transparent;
   align-items: center;
 
 }
+
 .custom_nav-container .navbar-nav .nav-item {
   margin: 0px 10px; /* Adjust the spacing between menu items */
   border-right: 2px solid goldenrod; /* Add a right border to create separation */
   padding-right: 20px; /* Add padding to the right to separate items visually */
+}
+@media (max-width: 1200px){
+border-right: 0px solid black;
 }
 
 .custom_nav-container .navbar-nav .nav-item:last-child {
