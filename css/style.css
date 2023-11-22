@@ -49,11 +49,7 @@ body {
   background-size: contain; /* This property ensures the whole image fits within the div */
   background-position: center;
  
-
-    background-position: center center; /* Centers the image within the div */
-    /* You can adjust the width and height of the div to fit your needs */
-     /* Or specify a fixed width */
-    height: 100%;
+  
 
 }
 }
@@ -352,6 +348,7 @@ background-color: transparent;
   width: 35px;
   height: 5px;
   background-color: #ffffff;
+  
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
