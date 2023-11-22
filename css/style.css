@@ -11,9 +11,24 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../images/Home_bg.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-color: brown;
+ 
   background-attachment: fixed;
 
+}
+.home-icon-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999; /* Adjust the z-index value based on your needs */
+}
+
+.home-icon {
+  font-size: 24px; /* Adjust the font size based on your needs */
+  text-decoration:double;
+  color: yellow; /* Adjust the color based on your needs */
 }
 @media (max-width: 768px) {
   body{
@@ -32,9 +47,9 @@ body {
   flex-direction: column;
   background-image: url(../images/mobile-background.jpg);
   background-size: cover; /* This property ensures the whole image fits within the div */
-  
+  background-position: center;
  
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+
     background-position: center center; /* Centers the image within the div */
     /* You can adjust the width and height of the div to fit your needs */
      /* Or specify a fixed width */
@@ -46,6 +61,7 @@ body {
   display: none; /* Initially hide the ribbon */
   position: fixed;
   bottom: 0;
+  padding-top: 0%;
   right: 0;
   width: 100%;
   height: 50px;
@@ -264,15 +280,7 @@ background-color: transparent;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.9);
 }
-@media (max-width: 1200px){
-.custom_nav-container {
-  display:none;
-  padding: 0;
-  width: fit-content;
-  background-color: rgba(0, 0, 0, 0.9);
-  height:60%
-}
-}
+
 .custom_nav-container .navbar-nav {
   margin: auto;
   display: flex;
@@ -280,14 +288,10 @@ background-color: transparent;
   align-items: center;
 
 }
-
 .custom_nav-container .navbar-nav .nav-item {
   margin: 0px 10px; /* Adjust the spacing between menu items */
-  border-right: 2px; /* Add a right border to create separation */
+  border-right: 2px ; /* Add a right border to create separation */
   padding-right: 20px; /* Add padding to the right to separate items visually */
-}
-@media (max-width: 1200px){
-border-right: 0px solid black;
 }
 
 .custom_nav-container .navbar-nav .nav-item:last-child {
@@ -306,10 +310,7 @@ border-right: 0px solid black;
   transition: color 0.3s, font-weight 0.3s; /* Smooth transition on color and font-weight */
 }
 
-@media (max-width: 1200px){
-font-size: 8px;
-  border-radius: 1px;
-}
+
 .custom_nav-container .navbar-nav .nav-item .nav-link i {
   margin-right: 1px;
 }
@@ -333,9 +334,11 @@ font-size: 8px;
 
 .custom_nav-container .navbar-toggler {
   outline: none;
+
 }
 
 .custom_nav-container .navbar-toggler {
+  position: fixed;
   padding: 0;
   width: 37px;
   height: 42px;
@@ -344,6 +347,7 @@ font-size: 8px;
 }
 
 .custom_nav-container .navbar-toggler span {
+  
   display: block;
   width: 35px;
   height: 5px;
@@ -418,10 +422,10 @@ font-size: 8px;
 
 /*end header section*/
 #History{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #History.section {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 70%;
   margin: 30px auto;
   padding: 20px;
@@ -474,7 +478,7 @@ font-size: 8px;
 
 
 .portfolio_section {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   
   color: #ffffff;
   padding-top: 45px;
@@ -648,14 +652,14 @@ font-size: 8px;
 
 .service_section {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .service_section .box {
   margin-top: 30px;
   text-align: center;
   color: whitesmoke;
-  background-color: rgba(218, 116, 38, 0.5); 
+  background-color: rgba(218, 116, 38, 0.7); 
 
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
@@ -826,7 +830,7 @@ font-size: 8px;
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .background-image {
@@ -842,7 +846,7 @@ font-size: 8px;
 
 .slogan_section .carousel-inner {
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
   position: relative;
   z-index: 1;
 }
@@ -896,7 +900,7 @@ font-size: 8px;
 
 .contact_section {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
 }
 
@@ -1039,7 +1043,7 @@ font-size: 8px;
   text-align: center;
 }
 .client_section{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .client_section .client_id h5 {
   margin-top: 10px;
