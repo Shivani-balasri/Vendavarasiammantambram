@@ -46,7 +46,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../images/mobile-background.jpg);
-  background-size: cover; /* This property ensures the whole image fits within the div */
+  background-size: contain; /* This property ensures the whole image fits within the div */
   background-position: center;
  
 
